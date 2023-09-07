@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="whidth=device-width, initial-scale=1.0">
+        <title>Listas</title>
+    <body>
+        <p>sirven para organizar elementos o items que tengan que ser
+                organizados, son de 3 clases:ordenadas, no ordenadas y
+            de definicion</p>
+        <!--
+            *listas ordenadas o numeradas, muestran los elementos numerados
+            y organizados como en el ejemplo, se puede agregar el atributo type
+            al elemento o etiqueta ol para elegir el tipo de numeracion,
+            tambien se puede agregar el atributo star para elegir de donde parte
+            la numeracion
+        -->
+        <ol type="A" start="5">
+            <li>elemento</li>
+            <li>elemento</li>
+            <li>elemento</li>
+            <li>elemento</li>
+        </ol>
+        <!--
+            listas no ordenadas, se generan mediante el elemento ul y
+            no llevan una numeracion, se puede agregar el atributo type para
+             el tipo de viñeta por ejemplo el valor "circle" "disc"
+            -->
+        <ul type="circle">
+            <li>elemento</li>
+            <li>elemento</li>
+            <li>elemento</li>
+            <li>elemento</li>
+        </ul>
+        <!--
+            tambien se pueden crear subdivisiones dentro del mismo
+        -->
+        <ol type="A" start="5">
+            <li>elemento</li>
+            <li>elemento</li>
+            <li>elemento</li>
+             <ul type="square">
+            <li>elemento</li>
+            <li>elemento</li>
+            <li>elemento</li>
+            <li>elemento</li>
+        </ul>    
+            <li>elemento</li>
+        </ol>
+        <!--
+            lista de definicion DL DT DD sirven para mostrar ejemplo glosarios
+            o como un diccionario dobde puedes agregar terminos con sus definiciones
+        -->
+        <dl>
+            <dt>Photoshop</dt>
+            <dd>programa para edicion profesional propiedad de adobe</dd>
+            <dt>GIMP</dt>
+            <dd>programa para edicion especial</dd>
+        </dl>
+    </body>
+    </head>
+</html>

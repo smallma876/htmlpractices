@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="whidth=device-width, initial-scale=1.0">
+       <title>label fieldsed y legend</title> 
+    </head>
+    <body>
+        <!--
+            el elemento label ayuda a los discapacitados visuales a saber que deberia seleccionar o llenar
+            en ese elemento del formulario con un interprete de codigo
+        -->
+    <form action="ejemplo.php" method="post">
+        <label for="edad">Edad:</label>
+        <input type="text" name="edad">
+        <hr>
+        <!--
+            el fieldsed sirve para mostrar un cuadro que va a rodear los elementos(agrupar)
+            el legend es un texto que aparecera como titulo del cuadro
+        -->
+        <fieldset>
+            <legend>Informacion de contacto</legend>
+            <label for="email">Email</label>
+            <input type="text" name="email"><br>
+            <label for="telefono">Telefono</label>
+            <input type="telefono" name="telefono"><br>
+            <label for="direccion">Direccion</label>
+            <input type="text" name="direccion">
+        </fieldset>
+    </form>
+    </body>
+</html>

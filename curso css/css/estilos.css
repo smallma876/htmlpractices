@@ -1,0 +1,34 @@
+@import url(otrosestilos.css);
+* { font-family: helvetica };
+h2 { color: rgb(128, 0, 0); }
+p { color: rgb(70, 43, 226);}
+
+/* con esta apertura se pueden dejar comentarios en las hojas de estilo css*/
+
+/* selector tipo o de etiqueta*/
+
+span { color:darkgreen; }
+ 
+/*selector class:*/
+
+.subrayado { text-decoration: underline; }
+.cuadro { border: 4px solid red; padding: 23px;}
+
+/* selector id:*/
+
+#mayuscula { text-transform: uppercase;}
+#recuadro { border: 4px solid greenyellow}
+
+/*selector pseudo class.- los mas usados son:*/
+
+a:link { color:green;}    /*link que no se ha visitado aun */
+a:visited { color:brown;}     /*link ya visitado*/
+a:hover {font-weight: bold; text-decoration: none;}   /*cursor sobre el link*/
+a:active {color:aqua}  /* al mantener presionado sobre el link*/
+
+ /*selector de atributo*/
+
+ img[title] {width: 100px; height: auto;}    /* SE APLICA A TODOS LOS ELEMENTOS CON EL ATRIBUTO TITLE*/
+
+ img[alt="MATTIAS"] {width: 200px; height:auto}  /* SE APLICA A TODOS LOS ELEMENTOS CON UN ATRIBUTO Y VALOR ESPECIFICO*/
+

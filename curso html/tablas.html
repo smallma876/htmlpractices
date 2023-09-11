@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="whidth=device-width, initial-scale=1.0">
+        <title>tablas</title>
+       
+    </head>
+    <body>
+        <!--
+         sirven para mostrar datos de una manera organizada tipoexcel, con la etiqueta table, se pueden usar los atributos border
+         para agregar borde y agregando un valor para determinar grosor de pixel, tambien el whidt para determinar el ancho de la tabla, 
+         tambien el cellspacing es el espacio que va entre cada una de las celdas, tambien el cellpadding es para definir el margen interno
+          que maneja cada una de las celdas de la tabla,tambien el atributo rowspan para combinar filas y el atributo colspan para unir 
+          columnas. el CAPTION es el titulo de la tabla,el TH esLa etiqueta <thead> en HTML se utiliza dentro de un elemento <table> para
+        definir el grupo de filas que se consideran encabezados de una tabla. Estos encabezados generalmente contienen etiquetas <th>
+        (encabezado de tabla) en lugar de etiquetas,-->
+
+        <!--La etiqueta <tr> en HTML se utiliza para definir una fila dentro de una tabla. "TR" es 
+        una abreviatura de "table row" (fila de tabla en inglés). Esta etiqueta se coloca dentro de un elemento <table> y generalmente 
+        contiene una serie de celdas de datos representadas por las etiquetas <td>(celdas de datos estándar) o <th> (encabezados de tabla)
+         que definen el contenido de cada columna en esa fila.-->
+
+         <!--
+            La etiqueta <tfoot> en HTML se utiliza para definir el pie de una tabla dentro de un elemento <table>. "TFOOT" es una abreviatura
+            de "table footer" (pie de tabla en inglés). Esta etiqueta se utiliza para agrupar filas que contienen resúmenes, totales u 
+            otra información que deba mostrarse al final de una tabla, después de los datos principales.
+            
+        -->
+        <table border="5" cellspacing="2" cellpadding="2">
+            <caption>Tabla de posiciones</caption>
+            <thead>
+                <tr>
+                    <th>Equipo</th>
+                    <th>puntos</th>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rojo</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Amarillo</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>azul</td>
+                    <td rowspan="2">7</td>
+                </tr>
+                <tr>
+                    <td>naranja</td>
+                    <!--td>7</td-->
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Posiciones luego de 6 partidos</td>
+                    
+                </tr>
+            </tfoot>
+        </table>
+        <hr>
+        <table border="6" cellspacing="4" cellpadding="2">
+            <caption>LISTA DE PRECIOS DE UTILES</caption>
+            <thead>
+                <tr>
+                    <th>utiles</th>
+                    <th>x mayor</th>
+                    <th>x menor</th>
+                    <th>x ciento</th>
+                </tr>
+            </thead>
+           <tbody>
+                <tr>
+                    <td>cuaderno</td>
+                    <td>S/3.0</td>
+                    <td>S/5.0</td>
+                    <td>S/2.5</td>
+                </tr>
+                <tr>
+                    <td>lapicero</td>
+                    <td>S/2.0</td>
+                    <td>S/3.0</td>
+                    <td>S/1.5</td>
+                </tr>
+                <tr>
+                    <td>regla</td>
+                    <td>S/1.0</td>
+                    <td>S/2.0</td>
+                    <td>S/0.5</td>
+                </tr>
+           </tbody>  
+        </table>
+        
+    </body>
+</html>

@@ -1,0 +1,11 @@
+*{
+    color: aqua;
+    margin-top: 6px;
+    box-sizing: content-box;
+    padding: 2px;
+    border: 4px solid blue;
+}
+
+/*En resumen, margin controla el espacio alrededor de un elemento, padding controla el espacio dentro del borde de un elemento, y 
+box-sizing determina cómo se calculan las dimensiones totales de un elemento, considerando o no los márgenes en el cálculo. 
+Estos conceptos son esenciales para el diseño y el diseño de páginas web con CSS.

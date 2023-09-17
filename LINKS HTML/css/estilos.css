@@ -1,0 +1,24 @@
+h1 {
+    color:darkkhaki
+}
+
+a:link {
+    /*link sin abrir*/
+    color: coral;
+    text-decoration: none;   /*indicamos que no queremos subrayado el link*/
+}
+a:visited {
+    /*link que fue abierto*/
+    color:cyan;
+    text-decoration: none;
+}
+a:hover {
+    /*cuando pongo el cursor sobre el link*/
+    color:brown;
+    text-decoration: underline;  /*indicamos que si queremos subrayado el link*/
+}
+a:active {
+    /*cuando mantengo presionado click sobre el link*/
+    color:darkslategray;
+    text-decoration: underline;
+}

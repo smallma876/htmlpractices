@@ -1,0 +1,12 @@
+h1{
+    color:#e63946;
+    text-align: center;
+}
+p{
+    color:#2b2d42;
+    background-color: hsl(120, 23%, 95%);     /*color de fondo del elemento*/
+    padding:15px 50px;                    /* es el fondo que rodea el contenido*/
+    border:10px solid #023047;  /* borde que rodea el padding en este caso es borde solido de 10 px color blueviolet*/
+    margin:50px 40px 70px 60px;       /*espacio entre los elementos*/
+    text-align: center;               /*centra el texto dentro de la caja*/
+}

@@ -1,0 +1,23 @@
+h1 {
+    color: #1d3557
+}
+ul{
+    list-style-type: none;         /* indica de cancelar icono de lista*/
+    background-color: #457b9d ;
+    overflow: hidden;              /* de esta manera los elementos del ul se mostraran de manera independiente (un bloque independiente)*/
+    margin: 0px;                   /* de esta manera cancelamos los padding y margin que se puedan agregar de manera automatica*/
+    padding: 0px;
+}
+li{
+    float: left;                  /*los elementos floraran desde la izquierda y se acomodaran hacia la derecha*/
+}
+li a{                             /* de esta manera los estilos se aplicar a los link que esten dentro de un li*/
+    display: block;               /* de esta manera los elementos se desplegaran como un bloque*/
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+li a:hover{                       /* el hover es para indicar la accion al poner el mause encima del link*/
+    background-color: #1d3557;
+}

@@ -1,0 +1,16 @@
+h1{
+    color:#560bad;
+}
+/*separando por coma se puede poner dos valores al mismo tiempo*/
+a:link, a:visited {              
+    background-color: #b5179e;
+    color:white;
+    padding:15px 25px;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: #f72585;
+}

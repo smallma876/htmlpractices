@@ -1,0 +1,14 @@
+ol{
+    list-style: none;                        /* indica de cancelar icono de lista*/
+    counter-reset: contador;                 /*el counter reset reinicia el valor a 0 en cada lista nueva, y agregamos la variable que hemos definido eneste caso "contador"*/
+}
+ol li{
+    counter-increment: contador;            /* para cada elemento del li usaremos esta variable del contador se incrementara este valor en uno*/
+}
+ol li::before{                                 /*el ::before (selector before)sirve para agregar un elemento antes que se muestre el elemento del li*/   
+    content: "Curso " counter(contador) ") ";   /* en este caso hemos agregado la palabra curso*/
+    color:#ff6f00;                          /* "counter" es una funcion y especificamos una variable del nombre en este caso "contador"*/
+}
+ol li::after{                             /*el ::after agrega un elemento despues del li(list item)*/
+    content:"."
+}

@@ -1,0 +1,40 @@
+/*con el asterico definimos caracteriscas a todo
+el archivo html hasta que por escala se defina otra
+caracteristica que tenga mayor prioridad*/
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{                
+    color:#f72585;
+    text-align: center;
+    margin:15px
+}
+h2{
+   color:blueviolet;
+}
+p{
+    color:brown
+}
+/*div{
+    background-color: aqua;
+    border:5px solid red;
+    text-align: center;
+}*/
+
+/* CLASS ".NAMECLASS"*/
+
+.tarjeta{
+    border:5px solid red;
+    background-color: aqua;
+    text-align: center;
+    margin:15px 100px;
+    padding:15px
+}  
+.titulo{
+    color:chocolate
+}  
+
+    
+    
+    

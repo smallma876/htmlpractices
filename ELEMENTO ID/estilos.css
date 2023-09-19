@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*identificador id*/
+#titulo-principal{                
+    color:#f72585;
+    text-align: center;
+    margin:15px
+}
+h2{
+   color:blueviolet;
+}
+p{
+    color:brown
+}
+
+.tarjeta{
+    border:5px solid red;
+    background-color: aqua;
+    text-align: center;
+    margin:15px 100px;
+    padding:15px
+}  
+.titulo{
+    color:chocolate
+}

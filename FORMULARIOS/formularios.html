@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+        <!--"POST", los datos del formulario se envían en el cuerpo de la solicitud
+        HTTP y no son visibles en la URL. Esto significa que los datos no se 
+        comparten en la barra de direcciones y son más seguros para información
+         sensible.-->
+    <form method="get">
+        <fieldset>   <!--agrega un marco al formulario-->
+            
+            <!--de este modo se puede establecer datos que no se pueden modificar 
+            de parte del usuario pero que si seran enviados y procesados 
+            en el servidor o base de datos --> 
+            <label for=idpersona>ID persona:</label><br>
+            <input type=text id=idpersona name="idpersona"
+            readonly="true" value="100"> <!--DISABLED, DESABILITA EL INPUT y no lo envia al servidor-->
+            <br>
+            
+            <!--TYPE HIDDEN sirve para enviar datos ocultos para el usuario
+            pero que si lo recebira el servidor-->
+            <input type="hidden" id="sistema" name="sistema" value="SAP">
+            
+            <legend>Datos Personales:</legend>   <!--agrega un titulo al marco--> 
+            <!--label: para nombrar y relacionar la caja de texto con el atributo "for"-->
+            <label for="nombre">Nombre:</label><br>
+            
+            <!--Input:caja para insertar datos de texto, colocar id para especificar 
+                los datos a poner-->
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" 
+            required="true"/><br>  <!--mensaje de dato requerido-->     
+            
+            <label for="apellido">Apellido:</label><br>
+            
+            <!--el atriuto name es necesario para especificar el nombre con el que se enviaran
+                los datos al servidor-->
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido"
+            required="true"/><br>
+            
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"
+            required="true" placeholder="********"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"
+            placeholder="Email" required="true"><br>
+
+            <label for="edad">Edad:</label><br>
+            <input type="number" id="edad" name="edad"
+            required="true" placeholder="Edad"><br>
+            
+            <!--RADIOBUTTONS Y CHECKBOXES-->
+
+            <!--en el atributo name se debe colocar el mismo nombre para los dos 
+            elementos tipo radio de esta manera permitira seleccionar solo una opcion 
+            en este caso entre femenino y masculino-->
+            <label>Genero:</label><br>
+            <input type="radio" id="femenino" name="genero" value="femenino"/>
+            <label for="femenino">Femenino</label><br>
+            <!--el atributo value se debe poner para indicar la informacion q se enviara
+            hacia el servidor-->
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label><br>
+
+            <label>Musica Favorita:</label><br>
+            <input type="checkbox" id="clasica" name="musica" value="clasica">
+            <label for="clasica">Clasica</label><br>
+            <input type="checkbox" id="jazz" name="musica" value="jazz">
+            <label for="jazz">Jazz</label><br>
+
+            <label for="autos">Marca auto favorita:</label><br>
+            <select id="autos" name="autos"> <!--multipe:para escoger mas opciones-->
+                <option value="volvo">Volvo</option>
+                <option value="bmw">Bmw</option>
+                <option value="audi" selected="true">Audi</option>
+                <!--selected:especifica que opcion se motrata primero-->
+            </select><br><br>
+
+            <!--textarea: para dejar comentarios define el tamaño con rows y cols-->
+
+            <label for="comentario">Comentarios:</label><br>
+            <textarea id="comentario" name="comentario" rows="6" cols="20"
+            >Este es mi comentario
+            </textarea><br>
+            
+            <!--cuadro de boton para enviar datos"submit"-->
+            <input type="submit" value="enviar"/>
+            <input type="submit" formnovalidate="formnovalidate"
+            value="enviar sin validar">
+            <!--input reset=restablece los valores ingresado hasta el momento--> 
+            <input type="reset" value="restablecer">
+
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,61 @@
+html{
+    height: 100%;   /* establece el alto maximo del archivo html*/
+} 
+body{
+    margin:0;             
+    padding:0;
+    /*establece un fondo de dos colores en forma degradante*/
+    background: linear-gradient(#7e137e, #3c3ce0);
+}
+.contenedor{
+    
+    /*define el ancho de la zona donde estan los elementos dentro del pading y el borde*/
+    width: 150px;
+    height: 180px;
+    padding: 10px 30px 50px 30px;
+
+    /*el valor auto centrara automaticamente los elementos dentro del margin 
+    pero tienes que reducir el ancho del bloque div con el width para 
+    que se pueda visualizar */
+    margin:30px auto ;
+    
+    /* de esta forma le damos un color en este caso transparente al interior del 
+    elemento y el pading */
+    background: rgba(0,0,0, .5);
+     
+    /*definimos el tipo de borde*/
+    border-radius: 10px;    
+}
+h2{
+    margin:0 0 15px;
+    padding: 0;
+    font-size: 30px;
+    color: #4cc9f0;
+    text-align: center;
+    background: none;
+}
+.contenedor .elemento label{
+    color:white;
+}
+.contenedor .elemento input{
+    width: 100%;             /* ancho de la caja de texto*/
+    padding:10px 0;         
+    color:white;
+    background: transparent;  /*color de fondo de la caja*/
+    border: none;             
+    border-bottom: 1px solid rgb(18, 3, 27);
+    margin-bottom: 10px;
+}
+.contenedor .elemento input[type=submit]{      /* desta manera seleccionamos el tipo de input*/
+    background-color: #f72585; 
+    border:none;
+    letter-spacing: 2px;                       /*espacio entre las letras*/
+    text-transform: uppercase;                 /*mayusculas*/
+    cursor:pointer;                     /*cambia el cursor al seleccionar el boton*/
+    padding:8px 10px 10px 8px;
+    width: 62px;                      
+    margin: 10px 5px 10px 38px;
+    border-radius: 10px;
+    font-size: 10px;
+}
+

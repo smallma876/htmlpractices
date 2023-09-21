@@ -1,0 +1,26 @@
+.titulo{
+    color:blueviolet;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+.ventana{
+    border:none;
+    width: 100%;
+    height: 400px;
+}
+.centrar{
+    text-align: center;
+}
+.boton{
+    border:2px solid #7b7ba5;
+    background-color: white;
+    text-decoration: none;
+    padding:15px;
+    display:inline-block;
+    margin:30px
+}
+.boton:hover {
+    background-color: #7b7ba5;
+    color:white
+}

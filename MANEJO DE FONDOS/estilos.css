@@ -1,0 +1,12 @@
+body{
+    background-color: dodgerblue;
+    color:cornsilk;
+    background-image: url("img/fondo1.png");  /* oara importar imagen desde el ordenador*/
+    background-repeat: no-repeat;             /* establece como se presentara la imagen */
+    background-position: right top;          /* define en que lado de la pantalla se pondra el fondo*/
+    background-attachment: fixed;           /* la imagen de fondo se mantiene en su pposscion al hacer scroll*/
+}
+h1{
+    text-align: center;
+    background-color: dodgerblue;
+}

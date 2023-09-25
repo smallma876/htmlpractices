@@ -27,7 +27,7 @@ nav a{
     padding:10px;
     text-decoration: none;
     /*sirve para convertir lo elementos inline n bloques para que cada <a href>
-    su propio bloque*/
+    sea un propio bloque y no se sobrepongan al agregarles estilos*/
     display:block;            
 }
 

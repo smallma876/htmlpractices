@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+}
+.punteado{
+    border-style: dotted;
+    border-width: 10px 5px 3px 2px;  /*definimos el grosor del borde por cada lado*/
+    border-color:crimson hotpink gold lime;   /* podemos definir cada color por lado*/
+}
+.discontinuo{
+    border-style: dashed;
+    border-width: medium;
+    border-color:#457b9d   
+}
+.solido{
+    border: solid red;
+    border-width:10px 10px;
+    border-radius: 15px;
+}
+.doble{
+    border:5px double;
+}
+.surco{
+    border:10px groove
+}
+.cresta{
+    border:10px ridge;
+}
+.recuadro{
+    border:10px inset
+}
+.outset{
+    border:10px outset;
+}
+.mixto{
+    border-style:dotted solid dashed double;
+}
+
+

@@ -1,0 +1,38 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+h1{
+    text-align: center;
+    color:crimson;
+}
+div{
+    padding:10px;
+    border: 1px solid blue;
+    margin:20px;
+    background-color: beige;   /* agrega color fondo al elemento de texto y el padding*/
+    /*width: 400px;*/
+    outline: 10px; /* el outline es un borde que se suporpone encima del margin despues del border*/
+    outline-offset: 10px;          /* agrega una separacion entre el borde y el outline*/
+    box-sizing: border-box;        /*estabele el ancho maximo del box,sumando un total de 300 en este caso, con el borde y padding  incluidos*/
+    /*El valor max-width en CSS se utiliza para establecer la anchura máxima 
+    que puede tener un elemento HTML. Esto significa que puedes limitar el
+     ancho de un elemento para que no supere un valor específico, incluso si
+      su contenido o dimensiones naturales serían mayores. Esto es útil para
+       garantizar que tu diseño web sea responsive y se adapte correctamente
+        a diferentes tamaños de pantalla o dispositivos.*/
+    max-width: 100%;               
+} 
+/*MARGIN*/
+
+.margin{
+    padding:10px 15px 5px 3px;
+    border:1px solid blue;
+    margin: 0 auto;    /* centrara el elemento por el lado dereche e izquierdo*/
+    background-color: red;
+    max-width: 300px;
+    box-sizing:border-box
+}
+p.interno{
+    margin-left: inherit;  /* eradara el margin del elementro padre en este el div*/
+}

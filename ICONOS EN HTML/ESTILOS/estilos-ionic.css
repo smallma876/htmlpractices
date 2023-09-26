@@ -1,0 +1,14 @@
+.titulo{
+    text-align: center;
+    color:crimson
+}
+.home{
+    text-align: center;
+    font-size: 2em;
+    color:rgb(86, 174, 203)
+}
+.done{
+    text-align: center;
+    font-size: 2em;
+    color: aqua;
+}

@@ -1,12 +1,15 @@
 body{
     background-color: dodgerblue;
-    color:cornsilk;
+    background-size: 100%;                     /*ajusta la imagen al 100% de la pantalla*/
     background-image: url("img/fondo1.png");  /* oara importar imagen desde el ordenador*/
     background-repeat: no-repeat;             /* establece como se presentara la imagen */
-    background-position: right top;          /* define en que lado de la pantalla se pondra el fondo*/
-    background-attachment: fixed;           /* la imagen de fondo se mantiene en su pposscion al hacer scroll*/
+    background-position: center;              /* define en que lado de la pantalla se pondra el fondo*/
+    background-attachment: fixed;             /* (scroll por defecto) la imagen de fondo se mantiene en su pposscion al hacer scroll*/
+    color:cornsilk;               
+    /* todo lo anterior se puede simplificar con el background*/
 }
 h1{
     text-align: center;
-    background-color: dodgerblue;
+    background-color: dodgerblue;                   /* fondo del titulo*/
+    
 }

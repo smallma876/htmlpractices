@@ -1,0 +1,55 @@
+h1{
+    text-align: center;
+    color: crimson
+}
+.position_relative{
+    /* POSITION RELATIVE podemos mover elemento bloque con lo valores top left
+     botton right, dejando su espacio reservado en la pagina, los elementos 
+     que agregemos despues se haran de manera natural*/
+    
+    position:relative;
+    top:100px;        
+    left:50px;
+    max-width: 150px;
+    border: 3px solid crimson;
+    margin:auto;
+}
+    /*fixed, se coloca en relación con la ventana del navegador en lugar de 
+    estar vinculado a su posición en el documento HTML, se mantiene fijo en 
+    relación con la ventana,Otros elementos en la página se colocarán como si 
+    el elemento con position: fixed no estuviera presente.Es una propiedad de 
+    CSS que permite fijar un elemento en una posición específica en la ventana 
+    del navegador, independientemente del desplazamiento del contenido.*/
+.position_fixed{
+    position:fixed;
+    border:3px solid blue;
+    top:2px;
+    left:2px;
+    
+}
+.parrafo{
+    padding-bottom: 2000px;
+
+    
+}
+     /*POSITION RELATIVE: se usa para establecer un elemento hijo dentro 
+     de su elemento padre en relacion ala posicion del elemento padre,el
+     elemento padre debe de ser de position relative, al mover de posicion
+     al elemento de padre el elemento hijo se movera en relacion a este.
+     no afectan al flujo de los elementos, es común que se superpongan 
+     con otros elementos en la página .*/
+
+.relative{
+    max-width: 300px;
+    height: 200px;
+    top:100px;
+    left:100px;
+    position:relative;
+    border:3px solid cornflowerblue
+}     
+.position_absolute{
+    position:absolute;
+    bottom:20px;
+    right:10px;
+    border:3px solid yellow;
+}

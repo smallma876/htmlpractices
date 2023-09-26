@@ -1,0 +1,10 @@
+h1{
+    text-align: center;
+    color:crimson;
+}
+div{
+    width: 50%;                /*max-width en pixeles porcentaje ayuda a que el elemnto se ajuste al reducir o hacer zoom ala pantalla*/
+    border:3px solid firebrick;
+    margin:auto;                    /* centrara el div de manera automatica por los lados derecho e izquierdo*/
+
+}

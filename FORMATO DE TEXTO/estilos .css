@@ -1,0 +1,25 @@
+h1{
+    color:#ef476e;
+    
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #ced4da;  /* agrega sombreado alerededor del elemento de texto*/
+    letter-spacing: 3px;  /* espacio entre las letras*/
+    word-spacing: 10px;   /* espacio entre las palabras*/
+    text-decoration: overline underline; /* subraya el elemento de texto*/
+}
+.caja{
+    padding: 15px;
+    margin: auto;
+    width: 70%;
+    background-color: #219ebc;
+    border-radius: 5px;
+    color:white;
+}
+.texto{
+    text-align: justify;     /* justifica(tabula por ambos lados)el texto*/
+    text-indent: 30px;             /*indentacion(espacio al inicio del texto)*/
+    line-height: 1;                /*imcremeenta o disminuye espacio entre las lineas*/
+    white-space: normal;           /*(nowrap) el texto no se envuelve dentro del div*/
+    text-shadow: 1px 1px 2px #ced4da;
+}

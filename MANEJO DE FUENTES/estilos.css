@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+h1{
+    color:#ef470f;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #ced4da;
+    font-family: "sofia", cursive;
+}
+
+.caja{
+    padding:5px;
+    width: 40%;
+    height: 80px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    font: 20px;
+    float:left;
+
+}
+.caja.serif{
+    background-color: #5a189a;
+}
+.fuente.sofia{
+    font-family:"sofia", sans-serif;
+    font-style: normal;                               /*style por defecto*/
+    font-weight: normal;                              /*por dedecto*/
+    font-variant: small-caps;                         /*todas las pañabras en mayuscula y la primra un poco mas*/
+    font-size: small;                                  /*tamaño de fuente*/
+    /*font:font-style font-variant font-weight -font-size/line-height font-famlily*/
+}
+.fuente_georgia{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;                                   /*cursiva*/
+    font-weight: bold;                                    /*letras mas gruesa*/
+}
+.caja.sans-serif{
+    background-color: #00b4d8;
+    
+}
+.fuente_arial{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;                                 /*cursiva*/
+    font-weight:bolder ;                                /*fuente mas ancha*/
+    font-size:2vw,                                     /*view width(ancho ventana) 1 vw =1% de la pantalla*/
+}
+.fuente_verdana{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+}
+.caja.monospace{
+    background-color: #f15bb5;
+}
+.fuente_courier{
+    font-family: 'Courier New', Courier, monospace;
+}
+.caja.cursive{
+    background-color: #ff8500 ;
+}
+.fuente_lucida{
+    font-family: "lucida handwriting", cursive;
+}

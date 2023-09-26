@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+    color:crimson;
+}
+div{
+    padding:15px;
+    margin:auto;
+    max-width: 400px;
+}
+.icono_azul{
+    font-size:2.5em;
+    color:blue
+}
+.icono_rojo{
+    font-size: 3em;
+    color:red;
+}
+.icono_google{
+    vertical-align:middle;      /* centra el icono ala altura del parrafo*/
+    color:cornflowerblue;
+    font-size: 2.5em;
+}
+.icono_flecha{
+    vertical-align: middle;
+    color:red;
+    font-size: 2em;
+}

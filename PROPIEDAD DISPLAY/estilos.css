@@ -1,0 +1,20 @@
+h1, div ,p, span{
+    border:3px solid blueviolet;
+    text-align: center;
+    color:cornflowerblue;
+    padding:10px;
+    display: block;     /* "inline" los elementos en linea (en linea)*/
+}
+h1{
+    display:none;       /*oculta por completo el elemento selenccionado*/
+}
+p{
+    visibility: hidden;   /* oculta los elementos pero mantiene el espacio ocupado*/
+}
+a{
+    display: block;     /* los link son elementos en linea con eel display block se convertiran en bloques*/
+   
+}   
+li{
+    display: inline;     /* inline lo convierte en elementos de linea*/
+}

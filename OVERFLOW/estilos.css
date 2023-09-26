@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+    color:crimson
+}
+div.contenedor{
+    border:3px dashed greenyellow;
+    width:30%;
+    height: 50px;
+    margin:auto;
+    /* todo lo que salga del elemento div se ocultara con este elemento*/
+    /*con el overflow:scroll se mostraba un scroll para poder visualizar 
+    que se oculta*/
+    /*overflow:auto: se mostrara solo la barra de scroll que sea necesaria*/
+    /*se aplica el mismo concepto para el overflow: y x */
+    overflow:hidden;              
+}

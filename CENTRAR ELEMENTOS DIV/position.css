@@ -53,3 +53,13 @@ h1{
     right:10px;
     border:3px solid yellow;
 }
+/*STICKY:funciona como un position static hasta que sale de pantalla
+pa funcionar como un position fixed ,Para que position: sticky funcione,
+ debes especificar una propiedad adicional llamada top, right, bottom, o 
+ left para indicar la distancia desde el borde superior, derecho, inferior
+ o izquierdo del elemento de referencia*/
+.position_sticky{
+    position:sticky;
+    top:100px;
+    border:3px solid crimson
+}

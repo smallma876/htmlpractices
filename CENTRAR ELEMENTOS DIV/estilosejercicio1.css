@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+    color:crimson;
+}
+div.contenedor{
+    position:relative;
+    border:3px dashed greenyellow;
+    width: 30%;
+    margin:50px auto;
+}
+img.imagen{
+    width: 100%;
+    opacity: 0.5;
+}
+div.centro{
+    position:absolute;        /* el elemento se posicionara en relacion al elemento padre(div contenedor)*/
+    top:50%;
+    /*border:1px solid blue;*/
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 3px;
+}

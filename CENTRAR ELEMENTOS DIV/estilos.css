@@ -2,9 +2,32 @@ h1{
     text-align: center;
     color:crimson;
 }
-div{
-    width: 50%;                /*max-width en pixeles porcentaje ayuda a que el elemnto se ajuste al reducir o hacer zoom ala pantalla*/
-    border:3px solid firebrick;
-    margin:auto;                    /* centrara el div de manera automatica por los lados derecho e izquierdo*/
+div.estatico{
+    position:static;
+    padding:15px;
+    top:10px;                    /*este valor no tendra efecto ya que por defecto los elementos de bloque son estaticos*/
+    /*width: 50%;                max-width en pixeles porcentaje ayuda a que el elemnto se ajuste al reducir o hacer zoom ala pantalla*/
+    border:3px solid greenyellow;
+    /*margin:auto;                centrara el div de manera automatica por los lados derecho e izquierdo*/
+    background-color: whitesmoke;
+}
+div.relativo{
+    position: relative;
+    top:10px;                  /* aqui si tendra efecto este valor por el position relative que permite mover los bloques*/
+    left:10px;
+    padding:15px;
+    border:3px solid blueviolet;
+    background-color: whitesmoke;
+    z-index: 1;                  /* el z-index sirve para extabler el orden de los elementos que se superpondran */
+                                  /* el 1 para sobreponerse adelante y el -1 por detras*/
+}
 
+div.absoluto{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    padding:10px;
+    border:3px solid cornflowerblue;
+    background-color: whitesmoke;
+    
 }

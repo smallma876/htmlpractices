@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+    text-shadow: 2px 2px 2px #a8dadc;
+    color:#e63046;
+}
+div.contenedor{
+    /*los elementos hijo se alinear de izquierda a derecha  con el display
+    flex*/
+    display:flex;
+    background-color: #560bad;
+    /*flex-direction: column; los elementos se alinearan en filas uno debajo del otro*/
+    /*flex-direction:column-reverse se invierte el orden de los elementos*/
+    /*flex-direction:row-reverse  cambia los elementos de derecha a izquierda*/ 
+    flex-direction:row; /*valor por defecto se mostraran en horizontal y en el orden en que se fueron agregando los elementos*/
+    /*flex-wrap: nowrap; al encoger la ventana con el nowrap algunos elementos no pasaran
+    al siguiente renglon es decir nose envuenvel con el elemnto div padre*/
+    
+    flex-wrap: wrap;
+    /*al encoger la ventana,los elementos que quedan fuera de la ventana
+    pasan al siguiente renglon dentro del elemento padre/*
+    
+    /*flex-flow: row wrap  simplifia los dos tipos de flex en uno solo*/
+    /*justify-content: flex-start; valor por default elementos de izquierda a derecha*/
+
+    justify-content: center; /*carga los elementos al centro*/
+
+    /*justify-content: flex-end;   carga los elementos hacia la derecha*/
+
+    /*justify-content:space between   carga hacia los extremos dejando espacio entre ellos*/
+   
+    /*justify-content: space around   deja espacio alos costados*/
+
+    /*justify-content:space-evenly    para dejar el mismo espacio entre los lementos*/
+
+    height: 300px;
+    /*align-items: flex-star;  los alinea en vertical en la parte superipr*/
+    align-items: stretch;       /* center:los cargara al centro*/
+     /* aling-content: center; permite modificar como se acomodan los elementos pero de manera vertical cuando hay mas de una linea*/
+}
+div.contenedor >p{
+    background-color: #4895ef;
+    color:#f1faee;
+    margin:20px;
+    padding:15px;
+    font-size: 1.5em;
+}

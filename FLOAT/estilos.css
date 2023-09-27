@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+    color:crimson
+}
+div.contenedor{
+    border: 3px dashed greenyellow;
+    width: 30%;
+    height: 100px;
+    overflow: auto;
+    /* mueve los elementos hacia la izquieda en este caso en la misma linea*/
+    float:left;          
+}
+div.contenedor.flotado{
+    float:left
+}
+div.contenedor.flotado.contenedor1{
+    border:3px dashed greenyellow;
+}
+div.contenedor.flotado.contenedor2{
+    border: 3px dashed cornflowerblue;
+    float:right
+}
+div.contenedor.contenedor3{
+    float:none;               /* para limpiar el float tanto de derecha como izquierda*/
+    border:3px dashed darkorange;
+    margin:100px auto;
+}

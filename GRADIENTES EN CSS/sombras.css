@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+    text-shadow: 2px 2px 2px #a8dadc;
+    color:#e63946
+    /*el primer valor sera la sombra sobre el eje x(horizontal)
+    el segundo valor sobre el eje y(vertical), el tercer es el blur o difuminado
+    y permite que la sombra no sea tan dura*/ 
+}
+div.contenedor{
+    width: 30%;
+    height: 20%;
+    margin:auto;
+    border:3px solid #a8dadc;
+    padding:15px;
+    text-align: center;
+    /*agrega sombras al elemento bloque en este al contenedor
+    tienes las mismas caracteristicas del tex shadow pero agrega
+    un valor para agrandar el tamaño del difuminado*/
+    box-shadow: 2px 2px 5px 4px grey;
+    color:#457b9d;
+    border-radius: 15px;
+}
+div.cabecero{
+    background-color: #4cc9f0 ;
+}
+div.cuerpo{
+    padding-top: 2px;
+    font-size: 1.2e,;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px rgb(177,177,177);
+}

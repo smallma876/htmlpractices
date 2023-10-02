@@ -10,7 +10,7 @@ h1{
     position:relative;
     top:100px;        
     left:50px;
-    max-width: 150px;
+    width: 200px;
     border: 3px solid crimson;
     margin:auto;
 }
@@ -32,12 +32,9 @@ h1{
 
     
 }
-     /*POSITION RELATIVE: se usa para establecer un elemento hijo dentro 
-     de su elemento padre en relacion ala posicion del elemento padre,el
-     elemento padre debe de ser de position relative, al mover de posicion
-     al elemento de padre el elemento hijo se movera en relacion a este.
-     no afectan al flujo de los elementos, es común que se superpongan 
-     con otros elementos en la página .*/
+     /*POSITION RELATIVE:permite ajustar la posición de un elemento en relación con su posición normal, 
+     utilizando las propiedades de desplazamiento (top, right, bottom y left). Esto es útil cuando deseas realizar ajustes de
+      posicionamiento específicos sin afectar a otros elementos en la página.*/
 
 .relative{
     max-width: 300px;
@@ -47,6 +44,13 @@ h1{
     position:relative;
     border:3px solid cornflowerblue
 }     
+    /*El valor position: absolute en CSS es una propiedad que se utiliza
+     para controlar el posicionamiento de un elemento en relación con su 
+     primer elemento padre que tenga una posición distinta a static. A 
+     diferencia de position: relative, que ajusta la posición de un 
+     elemento en relación con su posición normal en el flujo del 
+     documento, position: absolute posiciona el elemento de manera 
+     absoluta en relación con su elemento padre posicionado más cercano*/
 .position_absolute{
     position:absolute;
     bottom:20px;

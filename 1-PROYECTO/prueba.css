@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Sofia&display=swap');
+
+*{
+    font-family:"poppins, sans-serif";
+    margin:0;
+    padding:0;
+}
+.fondo{
+    background-image: url(img/pintura-lago-montana-montana-al-fondo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor{
+    position:relative;
+    border: 2px solid grey;
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+    width: 400px;
+    height: 400px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor h2{
+    font-size: 2em;
+    color:white;
+    position:absolute;
+    top:30px;
+
+}
+.input-contenedor{
+    position:relative;
+    margin:40px 0px;
+   
+}
+.input-contenedor label{
+    position:absolute;
+    left:0px;
+    font-weight: bold;
+    font-size: 1.1em;
+    pointer-events: none;         /*se utiliza para controlar cómo un elemento HTML reacciona a eventos del puntero, como clics del ratón, movimientos del ratón y eventos táctiles.*/
+    transition: .6s;
+}
+
+input:focus ~ label,
+input:valid ~ label{    
+    bottom:27px;
+}
+
+.input-contenedor input{
+    position:relative;
+    height: 20px;
+    width: 300px;
+    outline: none;                 /* cancela el marco que se genera al seleccionar con el mause*/
+    background-color: transparent;
+    border:none;
+    border-bottom: 2px solid white;
+    font-size: 1.2em;
+    font-weight: bold;
+    color:rgb(12, 15, 67);
+}
+.input-contenedor i{
+    position:absolute;
+    color:black;
+    font-size: 20px;
+    right:0px;
+    top:22px;
+}
+
+.recordar{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.recordar label{
+    margin-right: 20px;
+}
+.recordar a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    text-decoration: underline;
+    color:rgb(33, 33, 145)
+}
+.enviar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:15px 0;
+}
+
+.enviar button:hover{
+    opacity: .9;
+    background-color: rgb(26, 26, 69);
+    color:white
+}
+.enviar button{
+    width: 100%;
+    height: 45px;
+    border-radius: 40px;
+    background: #fff;
+    border:none;
+    font-weight: bold;
+    cursor:pointer;
+    outline: none;
+    font-size: 1rem;
+}
+.enviar button:hover{
+    opacity: .9;
+    background-color: #1a1a45;
+    color:white
+}
+
+.registrar{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.registrar p{
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.registrar a{
+    font-weight: bold;
+    margin-left: 10px;
+    color:#1a1a45;
+    text-decoration: none;
+}
+a:hover{
+    color:white;
+    text-decoration: underline;
+}
+

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@300&family=Sofia&display=swap');
+
+*{
+    font-family: "Nunito", sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle, #423d3d, #5f1717 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.search-box{
+    background-color: white;
+    width: 90%;
+    padding: 10px;
+    
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    height: 80px;
+}

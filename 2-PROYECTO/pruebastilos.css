@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@300&family=Sofia&display=swap');
+*{
+    font-family: nunito, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    height: 100vh;
+    background-image: url(/1-PROYECTO/img/pintura-lago-montana-montana-al-fondo.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center
+    
+    
+}
+
+
+.search-box{
+    
+}

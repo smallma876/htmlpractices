@@ -1,0 +1,58 @@
+ *{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+ }
+    
+ .titulo-pag{
+    text-align: center;
+    font-size: 1.5m;
+    color:rgb(116, 116, 236);
+    text-shadow: 2px -2px 4px gray;
+    font-size: 1.5em;
+    margin:40px 0;
+    letter-spacing: -1px;
+    word-spacing: 2px;
+ }
+ span{
+    color:rgb(83, 206, 233);
+ }
+ .navegador{
+   padding:15px;
+    border-top: 1px solid gray;
+    max-width: 100%;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+ }
+ .navegador a{
+   
+    color:rgb(35, 33, 33);
+    font-size: 1.2em;
+    text-decoration: none;
+    padding:14px 34px;
+    cursor:pointer;
+ }
+a:hover{
+    transition: 0.2s;
+    text-decoration: underline;
+    background-color: rgb(14, 54, 110);
+    border-radius: 10px 0;
+    color:white;
+}
+
+.imagen-fondo{
+    background-image: url(/3-PROYECTO/img/principal.jpg);
+    background-size: cover;
+    background-position: center;
+  
+}
+
+.sobre-nosotros{
+    background-color: blue;
+    width: 200px;
+    padding:20px 10px;
+    margin-top: 30px;
+    
+}

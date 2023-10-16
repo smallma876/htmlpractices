@@ -42,10 +42,9 @@ a:hover{
     color:white;
 }
 
-.imagen-fondo{
-    background-image: url(/3-PROYECTO/img/principal.jpg);
-    background-size: cover;
-    background-position: center;
+.imagen-fondo img{
+   width: 100%;
+   height: 400px;
   
 }
 

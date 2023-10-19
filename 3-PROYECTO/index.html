@@ -13,50 +13,50 @@
     <header class="titulo-pag">
         <h1>Tienda de <span>muebles</span></h1>
     </header>
-
-    <nav class="navegador">
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="tienda.html">Tienda</a>
-        <a href="blog.html">Blog</a>
-        <a href="galeria.html">Galeria</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
-
-    <div class="imagen-fondo">
-        <img src="/3-PROYECTO/img/principal.jpg" alt="imagen-fondo">
+    <div class="contenedor-navegador">
+        <nav class="navegador">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
     </div>
-
-        <h2>Categorías de productos</h2>
-
+ <main>
+    <div class="banner"></div>
     <section class="categoria-productos">
-        <div class="link">
-           <img src="img/categoria1.jpg" alt="Imagen categoria">
-           <a href="#">Oficina</a>
-        </div>
+        <h2>Categorías de productos</h2>
+        <div class="contenedor-link">
+            <div class="link">
+                <img src="img/categoria1.jpg" alt="Imagen categoria">
+                <a href="#">Oficina</a>
+            </div>
 
-        <div class="link">
-            <img src="img/categoria2.jpg" alt="Imagen categoria">
-            <a href="#">Hogar</a>
-        </div>
+            <div class="link">
+                <img src="img/categoria2.jpg" alt="Imagen categoria">
+                <a href="#">Hogar</a>
+            </div>
 
-        <div class="link">
-            <img src="img/categoria3.jpg" alt="Imagen categoria">
-            <a href="#">Cocina</a>
+            <div class="link">
+                <img src="img/categoria3.jpg" alt="Imagen categoria">
+                <a href="#">Cocina</a>
+            </div>
         </div>
     </section>
 
     <section class="sobre-nosotros">
-        <img src="/3-PROYECTO/img/nosotros.jpg" alt="sillon"> 
-        <h2>Sobre Nosotros</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti at quam iure beatae natus quia exercitationem accusantium rem ullam nisi maxime dolore eum sed esse obcaecati, facere aperiam dicta officia.</p>
+        <div class="imagen-sillon"></div>
+        <div class="texto-sobre-nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti at quam iure beatae natus quia exercitationem accusantium rem ullam nisi maxime dolore eum sed esse obcaecati, facere aperiam dicta officia.</p>
+        </div>
     </section>
-    
-    <main>
+    <section>
         <h2>Nuestro productos</h2>
         <div>
             <div>
-                <img src="img/producto1.jpg" alt="Imagen producto">
+                <div><img src="img/producto1.jpg" alt="Imagen producto"></div>
                 <div>
                     <h3>Producto 1</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam odit aperiam, cumque atque dolore sapiente id corporis eos error consequuntur recusandae, saepe provident animi, tenetur suscipit cupiditate maiores consequatur nesciunt.</p>
@@ -109,9 +109,9 @@
                     <a href="#">Agregar al Carrito</a>
                 </div>
             </div>
-        </div><!--fin listado de productos-->
+        </div>
+    </section>         <!--fin listado de productos-->
     </main>
-
 
     <footer>
         <div>

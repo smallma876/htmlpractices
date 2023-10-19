@@ -5,73 +5,118 @@
     box-sizing: border-box;
  }
     
- .titulo-pag{
+ .titulo-pag h1{
     text-align: center;
-    font-size: 1.5m;
-    color:rgb(116, 116, 236);
+    font-size: 3.5em;
+    color:#7474ec;
     text-shadow: 2px -2px 4px gray;
-    font-size: 1.5em;
     margin:40px 0;
     letter-spacing: -1px;
     word-spacing: 2px;
+    text-transform: uppercase;
  }
- span{
+ .titulo-pag span{
     color:#758b90;
  }
- .navegador{
-   flex-wrap: wrap;
-   padding:15px;
-    border-top: 1px solid gray;
-    max-width: 100%;
-    display:flex;
-    justify-content:space-around;
-    align-items: center;
+ .contenedor-navegador{
+   border-top: 1px solid gray;
+   margin-bottom: 20px;
  }
- .navegador a{
    
-    color:#232121;
-    font-size: 1.2em;
-    text-decoration: none;
-    padding:14px 34px;
-    cursor:pointer;
+ .navegador{
+   display:flex;
+   max-width: 800px;
+   background-color: transparent;
+   margin:20px auto;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
  }
+    
+ .navegador a{
+   font-size: 1.3em;
+   color:#15152e;
+   text-decoration: none;
+   border-radius: 10px;
+   width: 100px;
+   height: 40px;
+   text-align: center;
+   padding: 7px 0 0 0;
+   transition: transform 0.2s;
+ }
+
 .navegador a:hover{
-    transition: 0.2s;
-    text-decoration: underline;
-    background-color: #0e366e;
-    border-radius: 10px 0;
-    color:white;
+   transform: scale(1.2);
+   background-color: #7474ec;
 }
 
-.imagen-fondo img{
-   width: 100%;
-   height: 400px;
+.banner{
+   background-image: url(/3-PROYECTO/img/principal.jpg);
+   height: 450px;
+   background-size: cover;
+   background-position: center;
+}
   
-}
-
-h2{
+.categoria-productos h2{
    text-align: center;
    color:#062e3c;
    padding:40px 0;
    font-size: 1.9em;
 }
-.categoria-productos{
+.contenedor-link{
    display:flex;
-   justify-content: space-evenly;
+   justify-content: space-around;
    flex-wrap: wrap;
-}
-.link a{
-   display: block;
-   text-align: center;
-   text-decoration: none;
-   padding:30px;
-   margin-top:-4px;
-   font-size: 1.2em;
-   color:#232121;
 
 }
-.link a:hover{
+.link {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 70px;
+   transition: transform 0.2s;
+}
+.link a{
+   padding:20px;
+   width: 100%;
+   background-color: #b1c0f1;
+   text-align: center;
+   border-radius: 0 0 20px 20px;
+   text-decoration: none;
+   font-size: 1.2em;
+   color:#062e3c;
+}
+.link:hover{
+   transform: scale(1.1);
+   color:gray;
+}
+.sobre-nosotros{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  
+}
+.imagen-sillon{
+   background-image: url(/3-PROYECTO/img/nosotros.jpg);
+   width: 50%;
+   height: auto;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.texto-sobre-nosotros{
+   width: 50%;
+   padding: 160px 150px; 
+   background-color: rgb(58, 164, 199); 
+}
+.texto-sobre-nosotros h2{
    color:white;
-   background-color:#0e366e;
-   border-radius: 0 0 10px 10px;
+   font-size: 2em;
+}
+.texto-sobre-nosotros p{
+   margin-top: 15px;
+   color:wheat;
+   line-height: 1.3;
+   
 }

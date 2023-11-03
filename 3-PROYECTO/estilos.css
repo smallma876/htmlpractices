@@ -17,7 +17,7 @@ html{
    font-family: "roboto", sans-serif;
  }
  h1,h2,h3{
-   margin-bottom:20px;
+   margin:40px 0 ;
  }
  img{
    max-width: 100%;
@@ -30,13 +30,16 @@ html{
    text-align: center;
  }
  .text-size{
-   font-size:1.5em;
+   font-size:2.5rem;
+ }
+ .color{
+   color:#062e3c
  }
  
  
  .titulo-pag h1{
     text-align: center;
-    font-size: 3.5em;
+    font-size: 3.5rem;
     color:#7474ec;
     text-shadow: 2px -2px 4px gray;
     margin:40px 0;
@@ -92,7 +95,7 @@ html{
    color:#062e3c;
    padding:40px 0;
    margin-top: 40px;
-   font-size: 2.0em;
+   font-size: 2.5rem;
    
 }
 .contenedor-link{
@@ -120,7 +123,7 @@ html{
    color:#062e3c;
 }
 .link:hover{
-   transform: scale(1.04);
+   transform: scale(1.1);
    color:gray;
 }
 /*.sobre-nosotros{
@@ -145,6 +148,7 @@ html{
 .sobre-nosotros{
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
+    
 }
 .banner-nosotros{
    background-image: url(/3-PROYECTO/img/nosotros.jpg);
@@ -160,13 +164,10 @@ html{
    /*flex-basis: ;           reduce el ancho del elemento al % establecido*/
    color:#062e3c;
 }
-.nuestros-productos{
-   padding-top:40px;
-   
-}
+
 .nuestros-productos h2{
-   font-size: 2.0em;
-   padding: 30px;
+   font-size: 2.5rem;
+   color:#062e3c;
 }
 .listado-producto{
    display: grid;
@@ -264,4 +265,87 @@ a{
    color:black;
    text-decoration: none;
 }
-  
+.copyright{
+   text-align: center;
+   margin-top:30px;
+   font-weight: bold;
+}
+
+
+/**NOSOTROS**/
+.contenido-principal{
+   margin-top: 70px;
+}
+.contenido-principal h2{
+   font-size: 2.5rem;
+   color:#062e3c;
+   
+}
+
+.contenido-nosotros{
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   grid-template-columns: repeat(auto-fit, minmax( 300px, 1fr));   /* cuando la imagen este en menos de 300px tomara 1 fr completo para las columas*/
+   column-gap: 20px;
+}
+.informacion-nosotros{
+   display: flex;
+   gap:30px;
+   flex-direction: column;
+   justify-content: center;
+}
+.contenedor-blog{
+   display: grid;
+   grid-template-columns: 1.7fr 1fr;
+   column-gap:50px;
+}
+.entrada{
+   border-bottom:1px solid gray;
+   margin-bottom: 30px;
+}
+.entrada-meta{
+   display: flex;
+   justify-content: space-between;
+   padding:30px;
+}
+.entrada-meta p{
+   font-weight: bolder;
+}
+.entrada-meta span{
+   color:#098f9b;
+}
+.entrada-blog p{
+   line-height: 30px;
+   margin:30px 0;
+}
+.btn{
+   background-color: #8cbc00;
+   color:white;
+   font-weight: bold;
+   display: block;
+   padding:10px;
+   max-width: 230px;
+   text-align: center;
+   margin-bottom: 50px;
+   transition: background-color 0.5s ease-out;
+}
+.btn:hover{
+   background-color:#769c02;
+}
+.lista-entrada{
+   margin: 0 60px;
+}
+.lista-entrada li{
+   
+   font-size: 1.1rem;
+   margin-bottom: 10px;
+}
+.contenedor-entrada{
+   width: 600px;
+   margin: 0 auto;
+}
+.contenedor-imagenes{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+}

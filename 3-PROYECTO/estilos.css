@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@300&family=Roboto:ital,wght@1,300&family=Sofia&display=swap');
 html{
    box-sizing: border-box;
+   /*font-size: 10px; /* 1REM = 10px */
 }
-*, *:before, *:after {
+*{
    box-sizing: inherit;
    margin:0;
    padding:0;
@@ -328,6 +329,8 @@ a{
    text-align: center;
    margin-bottom: 50px;
    transition: background-color 0.5s ease-out;
+   border:none;
+   cursor:pointer;
 }
 .btn:hover{
    background-color:#769c02;
@@ -344,8 +347,59 @@ a{
    width: 600px;
    margin: 0 auto;
 }
-.contenedor-imagenes{
+.contenedor-galeria{
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    gap: 20px;
+   list-style: none;
+}
+.contenedor-galeria img{
+   height: 300px;
+   object-fit: cover;
+}
+/**formulario**/
+
+.formulario{
+   max-width: 600px;
+   margin:0 auto;
+}
+.formulario fieldset{
+   border:2px solid black;
+   margin-bottom: 20px;
+   border-radius: 15px;
+
+}
+.formulario legend{
+   background-color: #164df2;
+   width:400px;
+   margin-bottom:30px;
+   text-align: center;
+   padding:8px 0;
+   color:white;
+   font-weight: bolder;
+}
+.campo{
+   margin: 30px 30px;
+   display:flex;
+}
+.campo label{
+   font-size: 1.2rem;
+   flex-basis: 18%;   /* modifica el tamaño base del elemento*/ 
+   font-weight: bold;
+   color:#062e3c
+}
+
+/* []= SELECTOR DE ATRIBUTO de esta forma seleccionaremos a todos los inputs de tipo texto*/
+/*.campo input[type="text"]*/
+
+
+/*de esta forma seleccionaremos a todos los inputs menos al de tipo radio*/
+.campo input:not([type="radio"]),
+textarea,
+select{
+
+   font-size: 1.3rem;
+   flex:1;            /* tomara todo el campo disponible*/
+   border:1px solid #f3eeeeff;
+   padding:4px
 }

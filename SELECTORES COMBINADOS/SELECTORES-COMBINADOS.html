@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Selectores combinados</title>
+</head>
+<body>
+    <div>
+        <h2>Selector descendiente</h2>
+        <div class="contenedor descendiente">
+            Selector hijo (child)
+            <p>Primer renglom</p>
+            <p>Segundo renglon</p>
+            <section>
+                <p>Tercer renglon</p>
+            </section>
+        </div>
+    </div> 
+    
+    <div>
+        <h2>selector hijos directos</h2>
+        <div class="contenedor hijo">
+            Selector hijo (child)
+            <p>Primer renglom</p>
+            <p>Segundo renglon</p>
+            <section>
+                <p>Tercer renglon</p>
+            </section>
+            <div>
+                <p>Cuarto renglon</p>
+            </div>
+            <p>Quinto renglon</p>
+        </div>
+    </div>
+
+    <div>
+        <h2>Selector hermano despues </h2>
+        <div class="contenedor hermano">
+            <span>primer renglon</span>
+            <p>segundo renglon</p>
+            <span>tercer renglon</span>
+            <p>cuarto renglon</p> 
+            <div>
+                <p>quinto rebglon</p>
+                <span>sexto renglon</span>
+            </div>
+        </div>
+        <p>septimo renglon</p>
+        <span>octavo renglon</span>
+    </div>
+
+    <div>
+        <h2>SELECTOR HERMANO INMEDIATO</h2>
+        <div class="contenedor adyacente">
+            selector adyacente:
+            <p>Primer renglon</p>
+        </div>
+        <p>Segundo renglon</p> 
+        <p>Tercer renglon</p>
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+html{
+    font-size: 10px;
+    
+}
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+h1{
+    text-align: center;
+    color:red;
+    text-shadow: 2px 2px 2px rgb(113, 113, 244);
+    font-size:4rem;
+}
+.container{
+    background-color: red;
+    width: 100%;            /* el ancho sera el maximo del contenedor*/
+    max-width: 80rem;        /*el ancho no crecera mas de 800px*/
+    min-width: 60rem;       /* el ancho no puede ser menor de 600px*/
+    height: 30rem;        /* toma 30px del contenedor*/
+    min-height: 20rem;   /* el ancho no puede ser menor de 600px y la ventana creara un scroll*/
+  
+}

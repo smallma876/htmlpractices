@@ -8,7 +8,7 @@ div.contenedor{
     flex*/
     display:flex;
     background-color: #560bad;
-    /*flex-direction: column; los elementos se alinearan en filas uno debajo del otro*/
+    /*flex-direction: column; los elementos se alinearan en una columna uno debajo del otro*/
     /*flex-direction:column-reverse se invierte el orden de los elementos*/
     /*flex-direction:row-reverse  cambia los elementos de derecha a izquierda*/ 
     flex-direction:row; /*valor por defecto se mostraran en horizontal y en el orden en que se fueron agregando los elementos*/
@@ -22,7 +22,7 @@ div.contenedor{
     /*flex-flow: row wrap  simplifia los dos tipos de flex en uno solo*/
     /*justify-content: flex-start; valor por default elementos de izquierda a derecha*/
 
-    justify-content: center; /*carga los elementos al centro*/
+    justify-content: center; /*carga los elementos al centro  segun el eje */
 
     /*justify-content: flex-end;   carga los elementos hacia la derecha*/
 

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" contet="index, follow">    <!-- importante para asegurarse de que el contenido de la página sea descubierto y aparezca en los resultados de búsqueda.-->
+    <link rel="icon" type="image/jpg" href="/3-PROYECTO/img/categoria1.jpg">  <!-- icono al lado del titulo de la pag-->
+    <meta name="description" content="Tienda de muebles"> <!-- descripcion que se mostrara en los motores de busqueda --> 
+    <link rel="stylesheet" href="estilos.css">
+    <title>tienda de muebles</title>
+</head>
+<body>
+    <header class="titulo-pag">
+        <h1>Tienda de <span>muebles</span></h1>
+    </header>
+    <div class="contenedor-navegador">
+        <nav class="navegador">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+    <main class="contenido-principal contenedor">
+        <h2 class="text-center text-size color">Contacto</h2>
+        <section class="contenedor-formulario">
+             <form action="#" class="formulario">
+                <fieldset>
+                    <legend>TUS DATOS</legend>
+                    <div class="campo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" value="luis" readonly> <!-- value es el valor que apareza en el input readonly indica que no se podra modificarf ni agregar texto en el input-->
+                    </div>
+
+                    <div class="campo">
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" id="asunto" placeholder="Tu asunto" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" placeholder="Tu Email" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefono">Telefono:</label>
+                        <input type="tel" id="telefono" placeholder="Tu Numero">
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="tu mensaje"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>PAIS</legend>
+
+                    <div class="campo">
+                        <label for="paises">Pais</label>
+                        <select name="paises" id="paises">
+                            <option value="">--Seleccione--</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="bolivia">Bolivia</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="ecuador">Ecuador</option>
+                            <option value="peru">Perú</option>
+                            <option value="venezuela">Venezuela</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>INFORMACION EXTRA</legend>
+
+                    <div class="campo">
+                        <label for="cliente"> Cliente</label>
+                        <input type="radio" id="cliente" name="tipo-usuario" value="cliente">
+                    </div>
+
+                    <div class="campo">
+                        <label for="proveedor">Proveedor</label>
+                        <input type="radio" id="proveedor" name="tipo-usuario" value="proveedor">
+                    </div>
+
+                    <div class="campo">
+                        <label for="interes">Categoria de Interés</label>
+                        <input list="interes" name="interes">
+                        <datalist id="interes">
+                            <option value="cocina">
+                            <option value="Exterior">
+                            <option value="Recamaras">
+                            <option value="Oficina">
+                        </datalist>   
+                    </div>
+                </fieldset>
+
+                <div">
+                    <input class="btn" type="submit" value="Enviar Formulario">
+                </div>
+
+             </form>   
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="grid-footer contenedor">
+            <div class="categorias-footer">
+                <h3 class="text-size">Categorias</h3>
+                <nav class="footer-menu">
+                    <a href="#">Cocina</a>
+                    <a href="#">Oficina</a>
+                    <a href="#">Jardin</a>
+                    <a href="#">Cochera</a>
+                    <a href="#">Dormitorio</a>
+                </nav>
+            </div>
+
+            <div class="sobre-nosotros-footer"> 
+                <h3 class="text-size">Sobre nosotros</h3>
+                <nav class="footer-menu">
+                    <a href="#">Nuestra historia</a>
+                    <a href="#">Valores</a>
+                    <a href="#">Carreras</a>
+                    <a href="#">Politica y privacidad</a>
+                    <a href="#">Terminos del servicio</a>
+                </nav>
+            </div>
+            <div class="soporte">
+                <h3 class="text-size">Soporte</h3>
+                <nav class="footer-menu">
+                    <a href="#">Preguntas frecuentes</a>
+                    <a href="#">Ayuda y linea</a>
+                    <a href="#">Confianza y segurida</a>
+                </nav>
+            </div>
+        </div>
+        <p class="copyright">Todos los derechos reservados,TiendaMuebles</p>
+    </footer>
+    
+
+</body>
+</html>

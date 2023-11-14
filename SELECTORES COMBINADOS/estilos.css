@@ -1,4 +1,4 @@
-h1{
+h2{
     text-align: center;
     color:#e63946
 }
@@ -17,22 +17,22 @@ div.contenedor.descendiente p{
     background-color: #fdffb6;
 }
 
-/*SELECTOR CHILD (HIJO)*/
+/*SELECTOR CHILD (HIJO DIRECTOS)*/
 /* con ">" indicamos que solo vamos a seleccionar a los hijos directos*/
 div.contenedor.hijo > p{       
     background-color: #ffc6ff;
 }
+/* SELECTOR HERMANOS DESPUES*/
+/*se aplicara a todos los elementos que esten despues del elemento 
+indicado y que esten dentro del mismo padre o al mismo nivel*/ 
+div.contenedor.hermano p ~ span{    
+    background-color: #9bf6ff ;
+}
 
 /*SELECTOR ADYACENTE
-/* con el "+" indicamos que se sellecionen solos los elementos
-en este caso  de tipo "p" que esten despues del elemento de tipo div
-que estemos indicando*/
+/* con el "+" indicamos que se aplique css solo al hermano que se encuentre 
+inmeaditamente despues y solo a el*/
 
 div.contenedor.adyacente + p{
     background-color: #caffbf;
-}
-/*se aplicara a todos los elementos p que esten despues del elemento div
-y que esten al mismo nivel*/
-div.contenedor.hermano ~ p{    
-    background-color: #9bf6ff ;
 }

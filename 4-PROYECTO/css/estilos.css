@@ -1,0 +1,408 @@
+/* custom properties*/
+
+/* Son variables definidas por el usuario que puedes crear para almacenar información y reutilizarla en tu hoja de estilo. Se declaran con --nombre: "variable" y se accede 
+a ellas con la función var(). Esta característica permite simplificar y organizar el código, ya que puedes modificar valores en un solo lugar y afectar todos los elementos 
+que utilicen esa variable.*/
+
+:root {
+    /*paleta de colores*/
+
+    --primario: #1073ba;
+    --secundario: #00da55;
+    --gris: #383838;
+    --blanco: #ffffff;
+    --negro: #1f1e1e;
+    --grisClaro: #e1e1e1;
+
+    --separacion: 5rem;
+
+    /*fuentes*/
+
+    --fuentePrincipal: 'Roboto', sans-serif;
+    --fuenteSecundaria: 'Lato', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 10px;
+}
+*, *:before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;     /* el tamaño de la fuente en el body comenzara con 1.6 rem*/
+    line-height: 1.5;      /* espacio entre lineas*/
+}
+
+/** Globales**/
+
+.contenedor{
+    max-width: 120rem;         /*maximo crecera hasta 1200px*/
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+    font-family: var(--fuenteSecundaria);
+    margin: calc( var(--separacion) / 2) 0 ;    /* de esta manera divideremos en dos el root separaccion paras todos "h" del html*/
+}
+
+h1{
+    font-size: 4.4rem;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+    display: block;
+    width: 100%;   
+    height: auto;
+}
+
+
+/** Utilidades**/
+.text-center{
+    text-align: center;
+}
+
+/** degradado-verde**/
+
+.degradado-verde{
+    
+    background:linear-gradient(to right, var(--primario) 0% , var(--secundario) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+}
+
+/** header **/
+.header{
+    background-color: var(--gris);
+    padding: var(--separacion) 0;
+    color: var(--blanco)
+}
+
+@media (min-width: 768px) { 
+    .contenido-header{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+@media (min-width: 768px) { 
+    .imagen-header{
+        display: flex;
+        align-items: center;
+    }
+}
+.texto-header{
+    text-align: center;
+    padding-top: var(--separacion);
+    
+    
+}
+@media (min-width: 768px) { 
+    .texto-header{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: unset;
+    }
+}
+.texto-header p{
+    margin: 0;
+}
+
+.tagline-producto{
+    font-size: 3rem;
+    font-weight: 900;
+   
+}
+.nombre-producto{
+    font-size: 6rem;
+    font-weight: 600;
+    margin:0;
+    
+}
+@media (min-width: 768px) { 
+    .nombre-producto{
+        font-size: 10rem;
+        margin: 0;
+        line-height: 1;       /*elimina el contorno que crea el h1 */
+    }
+}
+.precio-producto span{
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+.iconos{
+    padding-top: var(--separacion);
+}
+
+
+@media (min-width: 768px) { 
+    .iconos{
+        display: flex;
+        gap:2rem
+    }
+}
+
+.icono{
+    text-align: center;
+    margin-bottom: calc(var(--separacion));
+}
+
+.icono:last-of-type{
+    margin:0;
+}
+@media (min-width: 768px) { 
+    .icono{
+        margin:0;
+    }
+}
+.icono img{
+    width: 5rem;
+    margin: 0 auto;
+}
+.icono h3{
+    color: var(--primario);
+}
+
+/** banner con texto**/
+
+.contenedor-banner{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    margin:var(--separacion) 0;
+}
+@media (min-width: 768px) { 
+    .contenedor-banner{
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: dense;
+        height: 50rem;
+    }
+    .imagen-banner{
+        grid-column: 2 / 3;
+    }
+}
+.imagen-banner{
+    background-image: url(/4-PROYECTO/img/imagen-mujer.avif);
+    height: auto;
+    background-position: right;
+    background-size: cover;
+    
+}
+.sobre-techpro{
+    background-color: var(--primario);
+    color:var(--blanco);
+    padding:4rem;
+    font-size: 2rem;
+    line-height: 4rem;
+}
+@media (min-width: 1028px) { 
+    .sobre-techpro{
+        font-size: 2.8rem;
+        line-height: 5rem;
+    }
+}
+
+/** se puede hacer de esta manera tamnien**/
+
+/*
+.sobre-tech{
+    background-image:linear-gradiente(to bottom, trasnparent 50%, var(--primario) 0%), 
+    url(/img/imagen-mujer.jgp);
+    background-position:right;
+    background-repeat:no-repeat;
+}
+@media (min-width: 768px) {
+    .sobre-tech{
+        background-image:linear-gradiente(to left, trasnparent 50%, var(--primario) 0%), 
+        url(/img/imagen-mujer.jgp);
+        background-position:right;
+        background-repeat:no-repeat;
+    }
+}
+.sobre-tech-grid{
+    display:grid;
+    grid-template-rows:repeat(2, 40rem);
+    row-gap: var(--separacion);
+}
+@media (min-width: 768px) {
+    .sobre-tech-grid {
+        grid-template-rows: unset;
+        grid-template-column:repeat (2, 1fr);
+        colum-gap:4 rem;
+        row-gap:unset;
+    }
+}
+.texto-sobre-tech{
+    grid:row: 2 / 3;
+    color:var(--blanco);
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    padding-bottom:var(--separacion);
+}
+.texto-sobre-tech h2{
+    font-size:4rem;
+}
+
+.texto-sobre-tech p{
+    font-size:2rem;
+    line-height:2
+}
+
+/** elige tus techpro**/
+.elige-tus-techpro{
+    margin-bottom: 5rem;
+}
+
+.elige-tus-techpro > h2{
+    text-align: center;
+    color:transparent;
+    background: linear-gradient(to right, var(--secundario) 0% , var(--primario) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin: 8rem 0;
+
+}
+@media (min-width: 768px) { 
+    .elige-tus-techpro > h2{
+        font-size: 6rem;
+    }
+}
+.contenido-grid{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 3rem;
+}
+@media (min-width: 1028px) { 
+    .contenido-grid{
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4rem;
+    }
+   
+    .imagen-z{
+        grid-row: 1 / 3;
+        grid-column: 2 / 3;
+    }
+}
+.box-tech{
+    display: flex;
+    background-color: var(--grisClaro);
+    border-radius: 2rem;
+    padding: 1rem;
+    color:var(--primario);
+    line-height: 0;
+    background-size: 15rem;
+    background-position: 90% center; /*usando background-position: 90% center;, el fondo se colocará cerca del borde derecho horizontal y estará centrado verticalmente dentro del elemento.*/
+    transition-property: transform background-size;
+    transition-duration: .3s;
+}
+.box-tech-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    font-size: 6rem;
+}
+
+.imagen-z{
+    background-image: url(../img/modelo-z.svg);
+    background-repeat: no-repeat;
+    background-color: var(--primario);
+    color:var(--blanco);
+}
+@media (min-width: 1028px) { 
+    .box-tech.imagen-z{
+        background-size: 25rem;
+    }
+    .imagen-z h3{
+    font-size: 5rem;
+    }
+}
+
+.imagen-x{
+    background-image: url(../img/modelo-x.svg);
+    background-repeat: no-repeat;
+}
+.imagen-y{
+    background-image: url(../img/modelo-y.svg);
+    background-repeat: no-repeat;
+}
+.box-tech-texto p{
+    font-weight: 900;
+    
+}
+.box-tech:hover{
+    transform: scale(1.1);
+    background-size: 30rem;
+    cursor: pointer;
+}
+
+
+/** newsletter **/
+
+.imagen-newsletter{
+    background-image: url(../img/newsletter.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.contenedor-newsletter{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+@media (min-width: 768px) { 
+    .contenedor-newsletter{
+        grid-template-rows: unset;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.contenido-newsletter{
+    padding:2rem;
+}
+
+.texto-newsletter{
+    font-size: 2rem;
+}
+input[type="email"] {
+    width: 100%;
+    padding:1rem;
+    font-size: 1.8rem;
+}
+input[type="submit"]{
+    width: 100%;
+    padding:2rem;
+    cursor: pointer;
+    background-color: var(--primario);
+    font-weight: 900;
+    color: var(--blanco);
+    border: none;
+    font-size: 2rem;
+}
+
+.footer{
+    margin-top: 3rem;
+    font-family: var(--fuenteSecundaria);
+    text-align: center;
+    color: var(--primario);
+    font-size: 2.4rem;
+    text-transform: uppercase;
+
+}

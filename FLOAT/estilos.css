@@ -25,3 +25,11 @@ div.contenedor.contenedor3{
     border:3px dashed darkorange;
     margin:100px auto;
 }
+
+.prueba{
+    font-size: 100px;
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(255, 0, 0) 0% , rgb(39, 36, 36) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}

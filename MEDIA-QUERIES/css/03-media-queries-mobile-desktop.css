@@ -1,0 +1,23 @@
+.oferta{
+    background-color: #00446e;
+    padding:20px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.precio{
+    font-size: 40px;
+    margin: 0;
+}
+
+@media( max-width: 600px ){
+    .oferta{
+        max-width: 100%;
+    }
+}
+
+@media( max-width: 800px){
+    .oferta{
+        max-width: 40px;   /* siempre hay que mantener el orden en que se colocara las media queries, en desktop va del mas grande al mas pequerño en este caso estaria en desornde*/
+    }
+}

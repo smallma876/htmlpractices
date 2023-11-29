@@ -25,7 +25,7 @@ div.contenedor.hijo > p{
 /* SELECTOR HERMANOS DESPUES*/
 /*se aplicara a todos los elementos que esten despues del elemento 
 indicado y que esten dentro del mismo padre o al mismo nivel*/ 
-div.contenedor.hermano p ~ span{    
+div .contenedor.hermano p ~ span{    
     background-color: #9bf6ff ;
 }
 
@@ -36,3 +36,37 @@ inmeaditamente despues y solo a el*/
 div.contenedor.adyacente + p{
     background-color: #caffbf;
 }
+
+/*SELECTOR ATRIBUTO*/
+
+/* se define con []  para indicar estilos al atributo con su valor */
+
+a[href^="http"] {   /* aplicara a todos los links que empiezen con http*/
+    color:red;
+}
+
+a[href$=".com"]{    /* aplicara a todos lo links que terminen con .com*/
+    color:red;
+}
+input[type="tel"]{
+    border:2px solid red;
+}
+
+/* SELECTOR ELEMENTO ESPECIFICO*/
+
+/*ul li:first-child             seleccionara a primer hijo  
+ul li:last-child                selecciona al ultimpo hijo
+ul li:nth-child(n)              seleecionara al numero de hijo especificado
+ul li:nth-child(odd) y (even)   odd para inparese y even para pares*/
+
+ul li:nth-child(4n + 2){         /*empezara del 2 e ira de 4 en 4 */
+    color:red;
+}
+
+/* SELECTOR TODOS LOS ELEMENTOS EXCEPTO UNO O UNOS*/
+
+/*p:not(.texto)         selecciona todos los p menos el de clase texto*/
+
+p:not(.texto):not(.oferta){      /*selecciona a todos los p menos ala clase texto y oferta*/
+    color:red
+}  

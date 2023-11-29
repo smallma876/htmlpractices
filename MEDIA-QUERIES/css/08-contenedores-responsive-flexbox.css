@@ -1,0 +1,17 @@
+.tres-columnas-flex{
+    width: 90%;
+    max-width: 500px;
+    margin:0 auto;
+}
+
+@media (min-width: 760px) { 
+    .tres-columnas-flex{
+        display: flex;
+        gap:20px;
+        max-width: 100%;
+        
+    }
+    .columna{
+        flex:1;
+    }
+}

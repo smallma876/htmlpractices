@@ -1,0 +1,24 @@
+.oferta{
+    background-color: #00446e;
+    padding: 20px;
+    text-align: center;
+}
+
+.precio{
+    font-size: 20px;
+    margin: 0;
+}
+
+/* cuando el minimpo de la pantalla sea 600px en adelante pero como 
+maximo sea 800px aplicara los siguientes valores*/
+@media ( min-width: 600px ) and (max-width: 800px){    
+    .oferta{
+        background-color: greenyellow;
+    }
+}
+
+/*@media (min-width:800px) {
+    .oferta{
+        background-color: #00446e;
+    }
+}*/

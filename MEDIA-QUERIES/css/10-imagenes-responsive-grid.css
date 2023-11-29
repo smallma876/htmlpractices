@@ -1,0 +1,12 @@
+/* en vez de darle ancho ala imagen es mejor darle ancho al contenedor*/
+img{
+   max-width: 100%;  /* la imagen nunca crecera mas del 100% de su contenedor*/
+   margin: 0;
+   display: block;
+}
+
+/* de esta forma la imagen se adaptara al redudcir o estirar la pantalla*/
+img{
+   width: 100%;   
+   height: auto;
+}

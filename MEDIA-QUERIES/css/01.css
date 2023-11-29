@@ -1,0 +1,37 @@
+.oferta{
+    background-color: #00446e;
+    padding:20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.precio{
+    font-size: 60px;
+    margin:0
+}
+
+/*@media print{                         al seleccionar imprimir en el dispositivo tomara las siguiente caracteristica
+    body{
+        background-color: red;
+    }
+    
+}*/
+
+/*cuando el ancho de la ventana del navegador es igual o inferior a 600 
+píxeles aplicara los siguientes valores*/
+
+@media ( max-width: 600px ){     
+    .oferta{
+        max-width: 300px;         /* cuando el ancho sea menor de 600px el contenedor oferta sera maximo 300px*/
+    }
+    .precio{
+        font-size: 20px;
+    }
+}
+
+@media ( min-width: 900px ){      /* cuando el ancho de la pantalla tenga como minimo 900px en adelante aplicara los siguientes*/
+    .oferta{
+        max-width: 600px;
+    }
+}

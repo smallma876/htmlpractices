@@ -1,0 +1,8 @@
+.contenedor-responsive{
+    background-color: #fff;
+    /*width: 90%;              el contenedor tendra un ancho del 90% de su contenedor padre
+    max-width: 1000px;         el contenedor no sera mayor a 1000px*/
+    height: 400px;
+    width: min(90%, 1000px);    /* forma abreviada*/
+    margin: 0 auto;
+}

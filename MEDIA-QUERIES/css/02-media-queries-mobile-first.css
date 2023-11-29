@@ -1,0 +1,38 @@
+/*La estrategia "mobile first" en desarrollo web y CSS implica diseñar y 
+desarrollar primero para dispositivos móviles y luego ir progresando 
+hacia dispositivos más grandes, como tabletas y escritorios. En este
+ enfoque, se asume que los estilos básicos son para dispositivos móviles
+  y luego se utilizan media queries para aplicar estilos adicionales a 
+  medida que se amplía la pantalla*/
+
+
+.oferta{
+    background-color: #00446e;
+    padding: 20px;
+    text-align: center;
+}
+
+.precio{
+    font-size: 40px;
+    margin: 0; 
+}
+
+/* cuando el ancho de la pantalla sobrepase los 600px aplicara los 
+siguientes valores*/
+/* se aplicara cuando el minimo de ancho de la pantalla sea 600px en adelante*/
+
+@media( min-width: 600px ){     
+    .oferta{
+        max-width: 400px;
+        margin:0 auto;
+    }
+    .precio{
+        font-size: 20px;
+    }
+}
+
+@media ( min-width: 900px ){      /* cuando el ancho de la pantalla tenga como minimo 900px en adelante aplicara los siguientes*/
+    .oferta{
+        max-width: 600px;
+    }
+}

@@ -1,0 +1,27 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.tienda{
+    display: flex;
+    flex-direction: column;
+
+    &__heading{
+        color:v.$secundario;
+        margin: 0;
+    }
+
+    &__app{
+        display: flex;
+        gap: 2rem;
+
+        a{
+            width: 90%;
+            margin: 0 auto;
+            transition: transform .2s ease;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}

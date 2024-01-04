@@ -1,0 +1,38 @@
+//Un mixin en Sass es una función reutilizable que te permite agrupar y reutilizar bloques de código CSS. Puedes 
+//definir un conjunto de estilos y luego utilizar ese conjunto en múltiples lugares dentro de tu hoja de estilos.
+@use "base/variables" as v;
+
+@mixin color{                  
+    color: black;
+    font-size: 2rem;
+}
+
+@mixin bgColor($color) {                        // creamos una variable para el mixin 
+    background-color: $color;
+}
+
+// mixin para mediaqueries
+
+@mixin telefono {                                    // elegimos el nombre para la variable
+    @media (min-width: v.$telefono){            // traemos la variable $telefono desde el archivo variables 
+        @content;                               // @content para indicar que agregaremos propiedades a esta mediaqueries
+    }
+}
+
+@mixin tablet {
+    @media (min-width: v.$tablet){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: v.$desktop){
+        @content;
+    }
+}
+
+@mixin grid($columnas, $separacion){
+        display: grid;
+        grid-template-columns: repeat($columnas, 1fr);
+        column-gap:$separacion;
+    }

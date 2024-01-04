@@ -1,0 +1,19 @@
+@use "base/variables" as v;
+
+.text-center{
+    text-align: center;
+}
+.bg-primario{
+    background-color: v.$primario;
+}
+
+.activo{
+    color: v.$secundario;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.pd-bottom-0{
+    padding-bottom: 0;
+}
+

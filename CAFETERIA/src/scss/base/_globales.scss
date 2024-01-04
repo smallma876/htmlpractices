@@ -1,0 +1,70 @@
+
+//estamos importando el archivo variables y le estamos poniendo un alias con "as v" 
+//para usar esta variable hay que escribir el alias v.$aquituvariable
+@use "variables" as v; 
+html{
+    font-size: 10px ;
+    box-sizing: border-box;
+}
+
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: v.$fuente_secundaria;
+    font-size: 1.5rem;
+    background-color: v.$cafeClaro;
+}
+p{
+    color:v.$negro;
+}
+.contenedor{
+    width: 95%;
+    max-width: 120rem;
+    margin:0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+
+}
+h1,h2,h3{
+    margin: 0 0 v.$separacion
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 3.2rem;
+}
+
+.titulo{
+    color:v.$primario;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3.2rem;
+    line-height: 1.5;
+
+    &::after{
+        content: "";
+        background-image: url(../img/cafe.svg);
+        display: block;
+        width: 12rem;
+        height: 10rem;
+        margin: 0 auto;
+        
+    }
+
+    span{
+    color:v.$secundario;
+    font-size: 2rem;
+    display: block;
+    }
+}

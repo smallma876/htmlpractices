@@ -1,0 +1,45 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.box-proceso{
+    margin-bottom: 5rem;
+
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+
+    @media (min-width: v.$tablet) { 
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        &:nth-child(even){
+            .procesos{
+                order:-1;
+            }
+        }
+
+        .imagen,
+        .procesos{
+            flex:1;
+        }
+    }
+    .titulo-proceso{
+        margin: 1rem 0;
+        text-transform: uppercase;
+        color:v.$primario;
+
+        &::after{
+            content: "";
+            display: block;
+            width: 50%;
+            height: .3rem;
+            background-color: v.$secundario;
+        }
+    }
+
+    .texto-proceso{
+        line-height: 2;
+        margin:0;
+    }
+}

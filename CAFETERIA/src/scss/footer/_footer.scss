@@ -1,0 +1,50 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.footer{
+    background-color: v.$primario;
+
+    .derechos{
+        margin:0;
+        padding:2rem;
+        text-align: center;
+        color:v.$blanco;
+    }
+}
+
+.footer-contenedor{
+    padding: 5rem 0;
+    background-color: v.$blanco;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    row-gap: 2rem;
+
+    .footer-box{
+        text-align: center;
+        font-family: v.$fuente_cursiva;
+
+        .box-titulo{
+            text-transform: uppercase;
+            color:v.$secundario;
+            font-size: 2.3rem;
+            margin-bottom: 3rem;
+        }
+        
+        p,a{
+            font-size: 1.8rem;
+            color:v.$negro;
+        }
+    }
+}
+@include m.tablet {
+    .footer-contenedor{
+        grid-template-rows: unset;  
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+
+
+    
+

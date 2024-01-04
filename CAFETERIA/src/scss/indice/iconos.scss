@@ -1,0 +1,26 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.contenedor-iconos{
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:2rem;
+
+    @include m.tablet{
+        @include m.grid(3, 5rem );
+    }
+    
+    .iconos{
+        width: 12rem;
+        margin:0 auto;
+    }
+
+    .icono-texto{
+        text-align: center;
+        font-size: 3rem;
+        color:v.$primario;
+        font-family: v.$fuente_cursiva;
+    }
+}

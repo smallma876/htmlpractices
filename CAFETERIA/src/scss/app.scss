@@ -1,0 +1,15 @@
+/* hay que compilar esta hoja de estilos scss y generarla a .css con gulp,
+primero hay que crear dos dependencias, la primera es SASS (--save-dev sass) YA QUE ES LA QUE ENTIENDE
+LA GRAMATICA Y EL LENGUAJE DE SASS Y LA OTRA (gulp-sass)ES LA QUE PERMITE CONECTARLO CON el GULPFILE 
+*/
+
+// @ use para importar demas hojas de estilo .sass en este estamos importando la carpeta base
+// dentro de esta carpeta se encuentra la carpeta index y a su vez dentro de esta carpeta con
+// @forward nos sirve como indice para agregar las demas hojas de estilo.sass
+@use "base";
+@use "header";
+@use "indice";
+@use "footer";
+@use "internas";
+@use "utilidades";
+

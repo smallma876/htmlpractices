@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+    <title>Cafeteria sass</title>
+</head>
+<body>
+        <header class="header header-nosotros">
+            <div class="contenido-header contenedor">
+                <div class="barra">
+                    <div class="logo">
+                        <img src="build/img/logo.svg" alt="logo">
+                    </div>
+                    <nav class="nav-principal">
+                        <a class="link"href="index.html">Inicio</a>
+                        <a class="link activo"href="nosotros.html">Nosotros</a>
+                        <a class="link"href="proceso.html">Proceso</a>
+                        <a class="link"href="menu.html">Menú</a>
+                        <a class="link"href="galeria.html">Galería</a>
+                        <a class="link"href="contacto.html">Contacto</a>
+                    </nav>
+                </div>
+                <p class="texto-header">
+                    una nueva experiencia cada dia.
+                </p>
+            </div>
+        </header>
+        <main class= "contenedor contenido-principal" > 
+            <h2 class="titulo"><span>conoce mas</span>sobre nosotros</h2>  
+                <div class="nosotros-grid">
+                    <picture>
+                        <source srcset="build/img/nosotros_sidebar.avif" type="image/avif">
+                        <source srcset="build/img/nosotros_sidebar.webp" type="image/webp">
+                        <source srcset="build/img/nosotros_sidebar.jpg" type="image/jpeg">
+                        <img loading="lazy" src="build/img/nosotros_sidebar.jpg" width="500" height="300" alt="imagen-cafeteria">
+                    </picture>
+                    <div class="texto-nosotros">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, optio? Iusto delectus atque quod nam nihil eos repellat molestiae quas explicabo tempora necessitatibus voluptatem voluptatibus exercitationem impedit dicta, deleniti ex.</p>
+                        <blockquote>Excelente Sabor!</blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, ullam similique repellat debitis unde iure blanditiis ipsa nostrum exercitationem id doloremque corporis incidunt, vel, quo nam rerum deserunt omnis non?</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-contenedor contenedor ">
+                <div class="footer-box">
+                    <h3 class="box-titulo">ubicacion</h3>
+                    <p>Nicolas Copérnico 599</p>
+                    <p>Guadalajara,Jalisco</p>
+                </div>
+                <div class="footer-box">
+                    <h3 class="box-titulo">reservación</h3>
+                    <p>Tel.3850-9102</p>
+                    <p><a href="tel:4987576">Llamar</a></p>
+                </div>
+                <div class="footer-box">
+                    <h3 class="box-titulo">horario</h3>
+                    <p>Lun-Jue:11:00 - 12:00</p>
+                    <p>Vie-Sab:11:00 - 12:00</p>
+                    <p>Dom: Cerrado</p>
+                </div>
+            </div> 
+            <p class="derechos">Todos los derechos reservados.La Cafeteria</p>
+        </footer>
+</body>
+</html>

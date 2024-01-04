@@ -1,0 +1,48 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.contenedor-contacto{
+    @include m.tablet{
+        background-image: url(../img/granos_cafe.jpg);
+        background-size: 40%;
+        background-repeat: no-repeat;
+        background-position: center right;
+        @include m.grid(2, 2rem)
+    }
+}
+
+.formulario{
+
+    .campo{
+        display: flex;
+        flex-direction: column;
+        margin-bottom:2rem;
+        
+        label{
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 2.2rem;
+        }
+        
+        input:not([type=submit]),
+        select{
+            padding:.5rem;
+            border: .5rem solid v.$primario;
+        }
+
+        input[type=submit]{
+            border:none;
+            background-color: v.$primario;
+            padding:.5rem;
+            color:v.$blanco;
+            font-size: 2.2rem;
+            font-weight: 700;
+
+            &:hover{
+                cursor: pointer;
+                background-color: #994f30;
+                transition: .2s ease;
+            }
+        }
+    }
+}    

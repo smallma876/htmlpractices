@@ -1,0 +1,81 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.nuestro-menu{
+    background-color: v.$primario;
+    padding-bottom: 3rem;
+
+    &::before, &::after{
+        content: "";
+        background-image: url(../img/menu_arriba.svg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 75rem;
+        height: 18rem;
+        display: block;
+        position: relative;
+        top:6rem;
+    }
+    
+    &::after{
+        background-image: url(../img/menu_abajo.svg);
+        top:-7rem;
+    }
+
+    .titulo-principal{
+        color:v.$blanco;
+        text-align: center;
+        font-size: 4rem;
+        text-transform: uppercase;
+        line-height: 1.2;
+
+        span{
+            font-size: 2rem;
+            display: block;
+        }
+    }
+
+    @include m.tablet {
+        .menu-grid{
+            @include m.grid(2, 2rem)
+        }
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .titulo-menu{
+            color: v.$blanco;
+            text-transform: uppercase;
+        }
+
+        .box{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            line-height: 1.5;
+            padding: 0 2rem;
+            margin-bottom:2rem;
+
+            .texto-menu{
+                color:v.$secundario;
+                font-size: 2.2rem;
+                margin:0;
+            }
+
+            span{
+                display: block;
+                color:v.$blanco;
+            }
+
+            .precio{
+                color:v.$blanco;
+                font-size: 4rem;
+                font-weight: 700;
+                margin:0;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.seccion-menu{
+    @media (min-width: v.$tablet) { 
+        @include m.grid(2, 2rem);
+        align-items: end;
+    }
+    p{
+        line-height: 2;
+        font-size: 1.8rem;
+    }
+
+    .imagen-seccion-menu{
+        background-image: url(../img/cafe.jpg);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        height: 25rem;
+        background-size: 90%;
+        
+        @media (min-width: v.$tablet) { 
+            background-position: 20% 100%;
+            background-size: 100%;
+        }
+        @media (min-width: v.$desktop) { 
+            background-size: 90%;
+            height: 40rem;
+        }
+    }
+}

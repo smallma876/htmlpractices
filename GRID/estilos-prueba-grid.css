@@ -1,0 +1,25 @@
+.contenedor{
+    width: 80%;
+    margin: 0 auto;
+}
+.contenido{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3,1fr);
+    background-image: url(/5-PROYECTO/img/nosotros.jpg);
+    
+    background-repeat: no-repeat;
+    background-position: bottom center;  /* define el lugar donde se posicionara con respecto a su contendor en este caso "contendor"*/
+    background-size: 100% 80%;          /*  100% para el widht y 80 % para el alto puede deformar la imagen*/
+}
+
+.texto-nosotros{
+    background-color: white;
+    font-size: 20px;
+    grid-column: 2 / 4;
+    padding: 30px;
+}
+
+h1{
+    margin-bottom: 100px;
+}

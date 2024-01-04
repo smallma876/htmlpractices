@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM Básicos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+
+    <div class="caja-curso">
+        <h1>CSS La Guía Completa - Flexbox, CSS Grid, SASS +20 proyectos</h1>
+        <p> <a target="blank" rel="nofollow noopener noreferrer"  href="https://twitter.com/codigoconjuan"> - Juan De la torre @codigoconjuan </a> </p>
+        <a target="blank" rel="nofollow noopener noreferrer"  href="https://codigoconjuan.com/">Vísita mi sitio Codigo Con Juan</a>
+    </div>
+
+    <h1>Básicos BEM</h1>
+
+    <div class="contenedor">
+        <div class="productos">   <!-- en BEM si no hay doble guin bajo o doble gion normal significa que es un bloque-->
+            <h2 class="productos__heading">Nuestros Productos</h2>   <!-- el heading despue delos guiones bajos es un elemento del bloque producto-->
+            <div class="productos__grid">
+                <div class="producto">   <!-- aqui empezamos un nuevo bloque llamado producto que tendras sus propios elementos--> 
+                    <img class="producto__imagen" src="../BEM/img/img/producto1.jpg" alt="imagen">
+                    <div class="producto__contenido">
+                        <h3 class="producto__nombre">Producto 1</h3>
+                        <p class="producto__descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, praesentium vero! Ipsa laudantium consequuntur est pariatur quam necessitatibus omnis! Ab minus deleniti debitis! Fugiat facere numquam laboriosam eligendi iusto repellendus.</p>
+                        <div class="producto__precios">
+                            <p class="producto__precio">$199</p>
+                        </div>
+                        <button class="producto__boton" type="button">Añadir al carrito</button>
+                    </div>
+                </div>
+
+                <div class="producto">   <!-- aqui empezamos un nuevo bloque llamado producto que tendras sus propios elementos--> 
+                    <img class="producto__imagen" src="../BEM/img/img/producto2.jpg" alt="imagen">
+                    <div class="producto__contenido">
+                        <h3 class="producto__nombre">Producto 2</h3>
+                        <p class="producto__descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, praesentium vero! Ipsa laudantium consequuntur est pariatur quam necessitatibus omnis! Ab minus deleniti debitis! Fugiat facere numquam laboriosam eligendi iusto repellendus.</p>
+                        <div class="producto__precios">
+                            <p class="producto__precio"> $199</p>
+                        </div>
+                        <button class="producto__boton" type="button">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">   <!-- aqui empezamos un nuevo bloque llamado producto que tendras sus propios elementos--> 
+                    <img class="producto__imagen" src="../BEM/img/img/producto3.jpg" alt="imagen">
+                    <div class="producto__contenido">
+                        <h3 class="producto__nombre">Producto 3</h3>
+                        <p class="producto__descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, praesentium vero! Ipsa laudantium consequuntur est pariatur quam necessitatibus omnis! Ab minus deleniti debitis! Fugiat facere numquam laboriosam eligendi iusto repellendus.</p>
+                        <div class="producto__precios">
+                            <p class="producto__precio"> $199</p>
+                        </div>
+                        <button class="producto__boton" type="button">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">   <!-- aqui empezamos un nuevo bloque llamado producto que tendras sus propios elementos--> 
+                    <img class="producto__imagen" src="../BEM/img/img/producto4.jpg" alt="imagen">
+                    <div class="producto__contenido">
+                        <h3 class="producto__nombre">Producto 4</h3>
+                        <p class="producto__descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, praesentium vero! Ipsa laudantium consequuntur est pariatur quam necessitatibus omnis! Ab minus deleniti debitis! Fugiat facere numquam laboriosam eligendi iusto repellendus.</p>
+                        <div class="producto__precios">
+                            <p class="producto__precio"> $199</p>
+                        </div>
+                        <button class="producto__boton" type="button">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">   <!-- aqui empezamos un nuevo bloque llamado producto que tendras sus propios elementos--> 
+                    <img class="producto__imagen" src="../BEM/img/img/producto5.jpg" alt="imagen">
+                    <div class="producto__contenido">
+                        <h3 class="producto__nombre">Producto 5</h3>
+                        <p class="producto__descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, praesentium vero! Ipsa laudantium consequuntur est pariatur quam necessitatibus omnis! Ab minus deleniti debitis! Fugiat facere numquam laboriosam eligendi iusto repellendus.</p>
+                        <div class="producto__precios">
+                            <p class="producto__precio producto__precio--oferta"> $99</p> <!-- al agregar los dos guiones indicamos que es un modificador de "producto-precio", no hay que remplazarlo por el nombre anterior sino agregarlo para que herede los estilos-->
+                            <p class="producto__precio">$199</p>   
+                        </div>
+                        <button class="producto__boton" type="button">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="producto">   <!-- aqui empezamos un nuevo bloque llamado producto que tendras sus propios elementos--> 
+                    <img class="producto__imagen" src="../BEM/img/img/producto6.jpg" alt="imagen">
+                    <div class="producto__contenido">
+                        <h3 class="producto__nombre">Producto 6</h3>
+                        <p class="producto__descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, praesentium vero! Ipsa laudantium consequuntur est pariatur quam necessitatibus omnis! Ab minus deleniti debitis! Fugiat facere numquam laboriosam eligendi iusto repellendus.</p>
+                        <div class="producto__precios">
+                            <p class="producto__precio"> $199</p>
+                        </div>
+                        <button class="producto__boton" type="button">Añadir al carrito</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -196,12 +196,26 @@ img {
     }
 }
 .imagen-banner{
-    background-image: url(/4-PROYECTO/img/imagen-mujer.jpg);
-    height: auto;
+    
     background-position: right;
     background-size: cover;
+}
+/* cuando estas clases (notavif notwebp) esten en el html cargara la imagen jpg */
+.notavif.notwebp .imagen-banner{
+    background-image: url(/4-PROYECTO/img/imagen-mujer.jpg);
+}
+    
+/*cuando esta clase (webp) exista en el html se aplicara esta imagen */
+.webp .imagen-banner{
+    background-image: url(/4-PROYECTO/img/imagen-mujer.webp);
+}
+
+/* cuando esta clase .avif exista en el html  se aplicara esta imagen */
+.avif .imagen-banner{
+    background-image: url(../img/imagen-mujer.avif);
     
 }
+
 .sobre-techpro{
     background-color: var(--primario);
     color:var(--blanco);
@@ -357,10 +371,22 @@ img {
 /** newsletter **/
 
 .imagen-newsletter{
-    background-image: url(../img/newsletter.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
+}
+
+.notavif.notwebp .imagen-newsletter{
+    background-image: url(../img/newsletter.jpg);
+    
+}
+
+.webp .imagen-newsletter{
+    background-image: url(../img/newsletter.webp);
+}
+.avif .imagen-newsletter{
+    background-image: url(../img/newsletter.avif);
     
 }
 
